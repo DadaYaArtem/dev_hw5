@@ -17,22 +17,21 @@ public class Service {
     public void run() {
         Scanner scanner = new Scanner(System.in);
         System.out.println(("""
-                Welcome to the app
-                You can send requests to petstore.swagger.io
+                Here you can send requests to petstore.swagger.io
                 """));
         commandMap.put("pet", new PetHandler());
         commandMap.put("store", new StoreHandler());
         commandMap.put("user", new UserHandler());
 
         while (true) {
-            System.out.println(("Choose the entity\n" + entities + "\nTo exit enter: exit"));
+            System.out.println(("Choose model\n" + entities + "\nTo exit enter: exit"));
             String inputEntity = scanner.nextLine().toLowerCase();
             if (inputEntity.equalsIgnoreCase("exit")) {
-                System.out.println("Exiting from app...");
+                System.out.println("Exiting from app");
                 break;
             }
             if (!commandMap.containsKey(inputEntity)) {
-                System.out.println(("Your input is not correct"));
+                System.out.println(("Your input is incorrect"));
                 continue;
             }
 

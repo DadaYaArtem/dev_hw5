@@ -62,21 +62,21 @@ public class ObjectsDefaultMethods {
 
     public User createUser(Scanner scanner) {
         User user = new User();
-        System.out.println("Enter NonDefaultMthods.user's ID");
+        System.out.println("Enter user's ID");
         user.setId(scanner.nextLong());
-        System.out.println("Enter NonDefaultMthods.user's username");
+        System.out.println("Enter user's username");
         user.setUsername(scanner.next());
-        System.out.println("Enter NonDefaultMthods.user's first name");
+        System.out.println("Enter user's first name");
         user.setFirstName(scanner.next());
-        System.out.println("Enter NonDefaultMthods.user's lastname");
+        System.out.println("Enter user's lastname");
         user.setLastName(scanner.next());
-        System.out.println("Enter NonDefaultMthods.user's email");
+        System.out.println("Enter user's email");
         user.setEmail(scanner.next());
-        System.out.println("Enter NonDefaultMthods.user's password");
+        System.out.println("Enter user's password");
         user.setPassword(scanner.next());
-        System.out.println("Enter NonDefaultMthods.user's phone");
+        System.out.println("Enter user's phone");
         user.setPhone(scanner.next());
-        System.out.println("Enter NonDefaultMthods.user's status (Long)");
+        System.out.println("Enter user's status (Long)");
         user.setUserStatus(scanner.nextLong());
         return user;
     }
